@@ -1,9 +1,13 @@
+import Advertise from "./Advertise/Advertise";
+import Banner from "./Banner/Banner";
 
 
 const Home = () => {
     return (
         <div>
-            <h2 className="text-4xl">this is home</h2>
+            <Banner/>
+            <Advertise/>
+
         </div>
     );
 };

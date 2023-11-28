@@ -1,0 +1,27 @@
+[
+    {
+      "id": "review1",
+      "userName": "John Doe",
+      "userImage": "https://i.ibb.co/jTWq1DQ/pexels-pixabay-220453.jpg",
+      
+      "description": "This property exceeded my expectations! Great location and amenities.",
+      "rating": 5
+    },
+    {
+      "id": "review2",
+      "userName": "Alice Smith",
+      "userImage": "https://i.ibb.co/TW2LfHy/pexels-andrea-piacquadio-774909.jpg",
+     
+      "description": "I had some issues with the plumbing, but overall it's a nice place.",
+      "rating": 3
+    },
+    {
+      "id": "review3",
+      "userName": "Bob Johnson",
+      "userImage": "https://i.ibb.co/XSwsNDD/pexels-andrea-piacquadio-712513.jpg",
+      
+      "description": "The view from this property is breathtaking!",
+      "rating": 4
+    }
+    
+  ]

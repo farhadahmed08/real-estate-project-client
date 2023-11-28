@@ -1,0 +1,39 @@
+[
+    {
+      "id": "ad1",
+      
+      "image": "https://i.ibb.co/Vt2VR43/pexels-christa-grover-2121121.jpg",
+      "location": "123 Ocean Drive, Paradise City",
+      "priceRange": "1,500,000",
+      "verificationStatus": "pending"
+      
+    },
+    {
+      "id": "ad2",
+      
+      "image": "https://i.ibb.co/mDn0jC5/pexels-emre-can-acer-2079246.jpg",
+      "location": "456 Main Street, Urban Center",
+      "priceRange": "800,000",
+      "verificationStatus": "rejected"
+      
+    },
+    {
+      "id": "ad3",
+      
+      "image": "https://i.ibb.co/W0dPfNS/pexels-jean-van-der-meulen-1457841.jpg",
+      "location": "789 Green Lane, Suburban Town",
+      "priceRange": "950,000",
+      "verificationStatus": "verified"
+     
+    },
+    {
+      "id": "ad4",
+      
+      "image": "https://i.ibb.co/BqTtJmb/pexels-julie-aagaard-2467285.jpg",
+      "location": "101 Skyview Towers, Metropolitan City",
+      "priceRange": "600,000",
+      "verificationStatus": "verified"
+      
+    }
+    
+  ]
