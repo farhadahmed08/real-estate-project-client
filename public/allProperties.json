@@ -1,0 +1,184 @@
+[
+    {
+      "id": "p1",
+      "image": "https://i.ibb.co/3yY6g21/pexels-curtis-adams-12119203.jpg",
+      "title": "Luxurious Beachfront Villa",
+      "location": "123 Ocean Drive, Paradise City",
+      "agentName": "Agent Johnson",
+      "agentImage": "https://i.ibb.co/jTWq1DQ/pexels-pixabay-220453.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "1,500,000"
+      
+    },
+    {
+      "id": "p2",
+      "image": "https://i.ibb.co/tYkc1Lv/pexels-homelane-com-1776574.jpg",
+      "title": "Downtown Penthouse",
+      "location": "456 Main Street, Urban Center",
+      "agentName": "Agent Smith",
+      "agentImage": "https://i.ibb.co/TW2LfHy/pexels-andrea-piacquadio-774909.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "800,000"
+    },
+    {
+      "id": "p3",
+      "image": "https://i.ibb.co/fC0F28H/pexels-vecislavas-popa-1743227.jpg",
+      "title": "Charming Suburban House",
+      "location": "789 Green Lane, Suburban Town",
+      "agentName": "Agent Brown",
+      "agentImage": "https://i.ibb.co/XSwsNDD/pexels-andrea-piacquadio-712513.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "950,000"
+    },
+    {
+      "id": "p4",
+      "image": "https://i.ibb.co/8YTV1t0/pexels-pixabay-271624.jpg",
+      "title": "Modern Downtown Apartment",
+      "location": "101 Skyview Towers, Metropolitan City",
+      "agentName": "Agent Taylor",
+      "agentImage": "https://i.ibb.co/MBHJSNr/content-confident-handsome-asian-businessman-looking-camera.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "600,000"
+    },
+    {
+      "id": "p5",
+      "image": "https://i.ibb.co/ZdC3cSW/pexels-max-rahubovskiy-5997959.jpg",
+      "title": "Rustic Countryside Cottage",
+      "location": "234 Meadow Lane, Rural Retreat",
+      "agentName": "Agent White",
+      "agentImage": "https://i.ibb.co/whFyTf9/emotion-concept-portrait-angry-cute-asian-woman-standing-posing-with-crossed-arms-looking-camera-wit.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "750,000"
+    },
+    {
+      "id": "p6",
+      "image": "https://i.ibb.co/Rp3xQRj/pexels-max-rahubovskiy-5997960.jpg",
+      "title": "City View Condo",
+      "location": "567 Urban Heights, Cityscape",
+      "agentName": "Agent Garcia",
+      "agentImage": "https://i.ibb.co/DGx63xC/handsome-young-brunette-man-smiling-hold-hands-pockets.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "1,200,000"
+    },
+    {
+      "id": "p7",
+      "image": "https://i.ibb.co/2jdxBGs/pexels-max-rahubovskiy-5998040.jpg",
+      "title": "Spacious Family Home",
+      "location": "789 Harmony Street, Family Haven",
+      "agentName": "Agent Lee",
+      "agentImage": "https://i.ibb.co/30cf8Hf/image-young-asian-business-woman-female-entrepreneur-glasses-holding-tablet-looking-professional-gla.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "900,000"
+    },
+    {
+      "id": "p8",
+      "image": "https://i.ibb.co/6Y6kkgd/pexels-max-rahubovskiy-6207822.jpg",
+      "title": "Sunny Beach Cottage",
+      "location": "101 Seaside Drive, Tropical Paradise",
+      "agentName": "Agent Rodriguez",
+      "agentImage": "https://i.ibb.co/jHmQ2FP/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confide.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "1,100,000"
+    },
+    {
+      "id": "p9",
+      "image": "https://i.ibb.co/zR9470H/pexels-max-rahubovskiy-6492400.jpg",
+      "title": "Historic Townhouse",
+      "location": "234 Heritage Lane, Historical District",
+      "agentName": "Agent Smith",
+      "agentImage": "https://i.ibb.co/6yJjG1X/pexels-andrea-piacquadio-874158.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "750,000"
+    },
+    {
+      "id": "p10",
+      "image": "https://i.ibb.co/LJVSfV6/pexels-max-rahubovskiy-6527046.jpg",
+      "title": "Contemporary City Apartment",
+      "location": "567 Urban Bliss, Modern Metropolis",
+      "agentName": "Agent Taylor",
+      "agentImage": "https://i.ibb.co/LnG9wf1/pexels-creation-hill-1681010.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "850,000"
+    },
+    {
+      "id": "p11",
+      "image": "https://i.ibb.co/c1CVDZn/pexels-max-rahubovskiy-6585766.jpg",
+      "title": "Tranquil Lake House",
+      "location": "789 Lakeside Lane, Serene Retreat",
+      "agentName": "Agent Johnson",
+      "agentImage": "https://i.ibb.co/NpbZF6B/pexels-daniel-xavier-1239291.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "1,300,000"
+    },
+    {
+      "id": "p12",
+      "image": "https://i.ibb.co/YTcskLq/pexels-max-rahubovskiy-6969777.jpg",
+      "title": "Modern Riverside Villa",
+      "location": "101 River View, Contemporary Living",
+      "agentName": "Agent Smith",
+      "agentImage": "https://i.ibb.co/YZX0XHj/pexels-justin-shaifer-1222271.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "1,700,000"
+    },
+    {
+      "id": "p13",
+      "image": "https://i.ibb.co/kxScNK4/pexels-max-rahubovskiy-6970065.jpg",
+      "title": "Mountain Retreat",
+      "location": "234 Summit Trail, Scenic Heights",
+      "agentName": "Agent Brown",
+      "agentImage": "https://i.ibb.co/4jCbXFP/pexels-simon-robben-614810.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "1,000,000"
+    },
+    {
+      "id": "p14",
+      "image": "https://i.ibb.co/nfKPjfg/pexels-max-rahubovskiy-7005269.jpg",
+      "title": "Urban Chic Apartment",
+      "location": "567 Metropolitan Ave, Stylish Living",
+      "agentName": "Agent Taylor",
+      "agentImage": "https://i.ibb.co/4PzctmP/portrait-african-american-model.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "700,000"
+    },
+    {
+      "id": "p15",
+      "image": "https://i.ibb.co/p4xJMzB/pexels-max-rahubovskiy-7031732.jpg",
+      "title": "Coastal Cottage Getaway",
+      "location": "789 Shoreline Lane, Coastal Haven",
+      "agentName": "Agent White",
+      "agentImage": "https://i.ibb.co/Bzcqwwj/portrait-corporate-woman-holding-clipboard-work-standing-formal-outfit-white-background.jpg",
+      "verificationStatus": "verified",
+      "priceRange": "950,000"
+    },
+    {
+        "id": "p16",
+        "image": "https://i.ibb.co/L6Bnhzw/pexels-pixabay-275484.jpg",
+        "title": "Modern City Loft",
+        "location": "101 Downtown Street, Urban Living",
+        "agentName": "Agent Garcia",
+        "agentImage": "https://i.ibb.co/YyFHz9Q/portrait-successful-man-having-stubble-posing-with-broad-smile-keeping-arms-folded.jpg",
+        "verificationStatus": "verified",
+        "priceRange": "1,000,000"
+      },
+      {
+        "id": "p17",
+        "image": "https://i.ibb.co/drKRMJ4/pexels-pixabay-276724.jpg",
+        "title": "Suburban Family Home",
+        "location": "234 Green Meadows, Quiet Suburb",
+        "agentName": "Agent Lee",
+        "agentImage": "https://i.ibb.co/CBsGh1p/portrait-young-asian-lady-smiling-with-cheerful-expression-shows-something-amazing-blank-space-casua.jpg",
+        "verificationStatus": "verified",
+        "priceRange": "850,000"
+      },
+      {
+        "id": "p18",
+        "image": "https://i.ibb.co/BfZS5Gh/pexels-vecislavas-popa-1571460.jpg",
+        "title": "Sleek Modern House",
+        "location": "567 Sleek Street, Contemporary Design",
+        "agentName": "Agent Rodriguez",
+        "agentImage": "https://i.ibb.co/5nSCkcJ/smiling-asian-man-using-tablet-computer.jpg",
+        "verificationStatus": "verified",
+        "priceRange": "1,200,000"
+      }
+
+]
