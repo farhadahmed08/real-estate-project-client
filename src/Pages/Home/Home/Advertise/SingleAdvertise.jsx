@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const SingleAdvertise = ({ item }) => {
-  const { id, location, image, priceRange, verificationStatus } = item;
+  const { _id, location, image, priceRange, verificationStatus } = item;
 
   return (
     <div>

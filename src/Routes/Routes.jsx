@@ -9,6 +9,8 @@ import AllProperties from "../Pages/AllProperties/AllProperties";
 import SinglePropertie from "../Pages/AllProperties/SinglePropertie";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
+import Secret from "../Pages/Shared/Secret/Secret";
+import PrivateRoute from "./PrivateRoute";
 
  export const router = createBrowserRouter([
     {
@@ -25,9 +27,9 @@ import SignUp from "../Pages/SignUp/SignUp";
           element: <AllProperties />,
         },
         {
-          path: "/allPropertie/:id",
+          path: "/properties/:id",
           element: <SinglePropertie />,
-          loader:()=>fetch('/allProperties.json')
+          loader: ({params})=> fetch(`http://localhost:5000/properties/${params.id}`)
         },
         {
           path: '/login',
@@ -36,6 +38,10 @@ import SignUp from "../Pages/SignUp/SignUp";
         {
           path: '/signup',
           element: <SignUp></SignUp>
+        },
+        {
+          path: '/secret',
+          element: <PrivateRoute><Secret></Secret></PrivateRoute>
         },
       ],
     },

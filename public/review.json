@@ -1,6 +1,6 @@
 [
     {
-      "id": "review1",
+      
       "reviewerName": "John Doe",
       "reviewerImage": "https://i.ibb.co/jTWq1DQ/pexels-pixabay-220453.jpg",
       "propertyTitle": "Luxurious Beachfront Villa",
@@ -8,7 +8,7 @@
       "rating": 5
     },
     {
-      "id": "review2",
+      
       "reviewerName": "Alice Smith",
       "reviewerImage": "https://i.ibb.co/TW2LfHy/pexels-andrea-piacquadio-774909.jpg",
       "propertyTitle": "Luxurious Beachfront Villa",
@@ -16,7 +16,7 @@
       "rating": 3
     },
     {
-      "id": "review3",
+      
       "reviewerName": "Bob Johnson",
       "reviewerImage": "https://i.ibb.co/XSwsNDD/pexels-andrea-piacquadio-712513.jpg",
       "propertyTitle": "Downtown Penthouse",

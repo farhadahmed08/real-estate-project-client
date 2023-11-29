@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SingleReview from "./SingleReview";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 
 const Reviews = () => {
@@ -7,7 +8,7 @@ const Reviews = () => {
     const [reviews,setReviews] = useState([])
 
     useEffect(()=>{
-        fetch('review.json')
+        fetch('http://localhost:5000/reviews')
         .then(res=>res.json()
         .then(data =>{
            setReviews(data)
@@ -16,11 +17,18 @@ const Reviews = () => {
 
 
     return (
-        <div className="grid grid-cols-3 gap-5">
+        <section className="m-10">
+            
+            <SectionTitle>
+            subHeading={"Reviews"}
+            heading={"Watch Review"} 
+            </SectionTitle>
+            <div className="grid grid-cols-3 gap-5">
             {
-                reviews.map(review=><SingleReview key={review.id} review={review}></SingleReview>)
+                reviews.map(review=><SingleReview key={review._id} review={review}></SingleReview>)
             }
         </div>
+        </section>
     );
 };
 

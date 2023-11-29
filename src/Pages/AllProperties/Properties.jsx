@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const Properties = ({properties}) => {
-    const {image,title,location,agentName,agentImage,verificationStatus,priceRange,id} = properties
+    const {image,title,location,agentName,agentImage,verificationStatus,priceRange,_id} = properties
     return (
         
         
@@ -48,7 +48,7 @@ const Properties = ({properties}) => {
       ${priceRange}
     </p>
   </div>
-<Link to={`/allPropertie/${id}`}><button className="btn btn-primary ">Details</button></Link>
+<Link to={`/properties/${_id}`}><button className="btn btn-primary ">Details</button></Link>
 </div>
     </div>
     );

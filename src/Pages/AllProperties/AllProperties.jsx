@@ -1,27 +1,45 @@
-import { useEffect, useState } from "react";
+
 import Properties from "./Properties";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
+
+import useProperty from "../../Hooks/useProperty";
+
 
 
 const AllProperties = () => {
 
+   
 
-    const [allProperties,setAllProperties] = useState([])
+    const [property] = useProperty()
 
-    useEffect(()=>{
-        fetch('allProperties.json')
-        .then(res=>res.json()
-        .then(data =>{
-           setAllProperties(data)
-        }))
-    },[])
+
+
+
+
+    // const [allProperties,setAllProperties] = useState([])
+
+    // useEffect(()=>{
+    //     fetch('allProperties.json')
+    //     .then(res=>res.json()
+    //     .then(data =>{
+    //        setAllProperties(data)
+    //     }))
+    // },[])
 
 
 
     return (
-        <div className="grid md:grid-cols-3 gap-3 grid-cols-1">
+        <div>
+            
+            <SectionTitle>
+
+            </SectionTitle>
+            
+            <div className="grid md:grid-cols-3 gap-3 grid-cols-1">
             {
-                allProperties.map(properties=><Properties key={properties.id} properties={properties}></Properties>)
+                property?.map(properties=><Properties key={properties._id} properties={properties}></Properties>)
             }
+        </div>
         </div>
     );
 };
