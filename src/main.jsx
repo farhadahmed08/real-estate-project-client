@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
+import {
+  QueryClient,
+  QueryClientProvider,
+  
+} from "@tanstack/react-query";
 import './index.css'
 import {
 
@@ -8,13 +12,20 @@ import {
 } from "react-router-dom";
 import { router } from './Routes/Routes';
 import AuthProvider from './Providers/AuthProvider';
+import { HelmetProvider } from 'react-helmet-async';
+
+const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
+   <QueryClientProvider client={queryClient}>
+   <HelmetProvider>
     <div className='max-w-screen-xl mx-auto'>
     <RouterProvider router={router} />
     </div>
+    </HelmetProvider>
+   </QueryClientProvider>
     </AuthProvider>
   </React.StrictMode>,
 )

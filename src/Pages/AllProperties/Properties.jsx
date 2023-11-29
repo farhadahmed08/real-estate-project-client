@@ -1,11 +1,19 @@
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 
 const Properties = ({properties}) => {
-    const {image,title,location,agentName,agentImage,verificationStatus,priceRange} = properties
+    const {image,title,location,agentName,agentImage,verificationStatus,priceRange,id} = properties
     return (
         
         
         <div >
+
+          <Helmet>
+            <title>Properties</title>
+          </Helmet>
+
+
      <div className="relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
   <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border ">
     <img
@@ -40,7 +48,7 @@ const Properties = ({properties}) => {
       ${priceRange}
     </p>
   </div>
-<button className="btn btn-primary ">Details</button>
+<Link to={`/allPropertie/${id}`}><button className="btn btn-primary ">Details</button></Link>
 </div>
     </div>
     );
