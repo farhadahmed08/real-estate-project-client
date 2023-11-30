@@ -13,6 +13,8 @@ import Secret from "../Pages/Shared/Secret/Secret";
 import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../LayOut/Dashboard";
 import AllUsers from "../Pages/AllUsers/AllUsers";
+import AdminRoute from "./AdminRoute";
+import ManageProperty from "../Pages/Dashboard/ManageProperty";
 
  export const router = createBrowserRouter([
     {
@@ -30,7 +32,7 @@ import AllUsers from "../Pages/AllUsers/AllUsers";
         },
         {
           path: "/properties/:id",
-          element: <SinglePropertie />,
+          element: <PrivateRoute><SinglePropertie /></PrivateRoute>,
           loader: ({params})=> fetch(`http://localhost:5000/properties/${params.id}`)
         },
         {
@@ -63,11 +65,10 @@ import AllUsers from "../Pages/AllUsers/AllUsers";
         //   element:<AdminRoute><AddItems/></AdminRoute>
           
         // },
-        // {
-        //   path:'manageItems',
-        //   element:<AdminRoute><ManageItems/></AdminRoute>
-          
-        // },
+        {
+          path:'manageProperties',
+          element:<AdminRoute><ManageProperty/></AdminRoute>,  
+        },
         // {
         //   path:'updateItem/:id',
         //   element:<AdminRoute><UpdateItem/></AdminRoute>,
@@ -76,7 +77,7 @@ import AllUsers from "../Pages/AllUsers/AllUsers";
         // },
         {
           path:'manageUsers',
-          element:<AllUsers/>
+          element:<AdminRoute><AllUsers/></AdminRoute>
         },
       ]
     }
