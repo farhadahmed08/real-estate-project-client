@@ -18,6 +18,7 @@ import ManageProperty from "../Pages/Dashboard/ManageProperty";
 import WishList from "../Pages/Dashboard/WishList/WishList";
 import MyProfile from "../Pages/Dashboard/MyProfile/MyProfile";
 import AddProperty from "../Pages/Dashboard/AddProperty/AddProperty";
+import AgentRoute from "./AgentRoute";
 
  export const router = createBrowserRouter([
     {
@@ -67,21 +68,12 @@ import AddProperty from "../Pages/Dashboard/AddProperty/AddProperty";
         },
         // admin only routes
 
-        // {
-        //   path:'addItems',
-        //   element:<AdminRoute><AddItems/></AdminRoute>
-          
-        // },
+        
         {
           path:'manageProperties',
           element:<AdminRoute><ManageProperty/></AdminRoute>,  
         },
-        // {
-        //   path:'updateItem/:id',
-        //   element:<AdminRoute><UpdateItem/></AdminRoute>,
-        //   loader: ({params})=> fetch(`http://localhost:5000/menu/${params.id}`)
-    
-        // },
+        
         {
           path:'manageUsers',
           element:<AdminRoute><AllUsers/></AdminRoute>
