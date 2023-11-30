@@ -16,6 +16,8 @@ import AllUsers from "../Pages/AllUsers/AllUsers";
 import AdminRoute from "./AdminRoute";
 import ManageProperty from "../Pages/Dashboard/ManageProperty";
 import WishList from "../Pages/Dashboard/WishList/WishList";
+import MyProfile from "../Pages/Dashboard/MyProfile/MyProfile";
+import AddProperty from "../Pages/Dashboard/AddProperty/AddProperty";
 
  export const router = createBrowserRouter([
     {
@@ -59,6 +61,10 @@ import WishList from "../Pages/Dashboard/WishList/WishList";
           path:'wishList',
           element:<WishList/>
         },
+        {
+          path:'myProfile',
+          element:<MyProfile/>
+        },
         // admin only routes
 
         // {
@@ -80,6 +86,14 @@ import WishList from "../Pages/Dashboard/WishList/WishList";
           path:'manageUsers',
           element:<AdminRoute><AllUsers/></AdminRoute>
         },
+
+        //agent routes
+        {
+          path:'addProperty',
+          element:<AddProperty/>
+          
+        },
+
       ]
     }
   ]);

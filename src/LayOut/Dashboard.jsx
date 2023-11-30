@@ -64,17 +64,17 @@ const Dashboard = () => {
             </li>
            
             <li>
-              <NavLink to="/dashboard/addProperty">
+              <NavLink to="/dashboard/myAddedProperty">
               <MdAddHomeWork />My added properties
               </NavLink>
             </li>
             <li>
-              <NavLink to="/dashboard/addProperty">
+              <NavLink to="/dashboard/mySoldProperty">
                 <FaHome></FaHome>My sold properties
               </NavLink>
             </li>
             <li>
-              <NavLink to="/dashboard/addProperty">
+              <NavLink to="/dashboard/requestedProperty">
               <PiGitPullRequestBold />Requested properties
               </NavLink>
             </li>

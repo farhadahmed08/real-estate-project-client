@@ -38,6 +38,7 @@ const SinglePropertie = () => {
           image,
           Agent_image:agentImage,
           price:priceRange,
+          verificationStatus
         }
         axiosSecure.post('/wishList',wishListItem)
         .then(res=>{
