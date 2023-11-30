@@ -10,8 +10,7 @@ import { PiGitPullRequestBold } from "react-icons/pi";
 const Dashboard = () => {
 
 
-    // const [isAdmin] =UseAdmin();
-    const isAdmin = true;
+    const [isAdmin] =UseAdmin();
     const isAgent = false;
 
 
