@@ -11,6 +11,7 @@ import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import Secret from "../Pages/Shared/Secret/Secret";
 import PrivateRoute from "./PrivateRoute";
+import Dashboard from "../LayOut/Dashboard";
 
  export const router = createBrowserRouter([
     {
@@ -45,4 +46,37 @@ import PrivateRoute from "./PrivateRoute";
         },
       ],
     },
+    {
+      path:'dashboard',
+      element:<Dashboard/>,
+      // children:[
+      //   // normal user routes
+      //   {
+      //     path:'cart',
+      //     element:<Cart/>
+      //   },
+      //   // admin only routes
+
+      //   {
+      //     path:'addItems',
+      //     element:<AdminRoute><AddItems/></AdminRoute>
+          
+      //   },
+      //   {
+      //     path:'manageItems',
+      //     element:<AdminRoute><ManageItems/></AdminRoute>
+          
+      //   },
+      //   {
+      //     path:'updateItem/:id',
+      //     element:<AdminRoute><UpdateItem/></AdminRoute>,
+      //     loader: ({params})=> fetch(`http://localhost:5000/menu/${params.id}`)
+    
+      //   },
+      //   {
+      //     path:'users',
+      //     element:<AdminRoute><AllUsers/></AdminRoute>
+      //   },
+      // ]
+    }
   ]);

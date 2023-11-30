@@ -28,9 +28,7 @@ const SinglePropertie = () => {
     <p>Agent: {agentName}</p>
     <p> Status:{verificationStatus}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">add</button>
-      <button className="btn btn-primary">update</button>
-      <button className="btn btn-primary">delete</button>
+      <button className="btn btn-primary">add to cart</button> 
     </div>
   </div>
 </div>
