@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import UseAuth from "../../../Hooks/UseAuth";
 import logo from '../../../../public/logo.png'
+import UseWishList from "../../../Hooks/UseWishList";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 const NavBar = () => {
 
     const { user, logOut } = UseAuth();
+    const [wishList]  = UseWishList();
     
     const handleLogOut = () => {
         logOut()
@@ -19,12 +22,12 @@ const NavBar = () => {
     <li><Link to="/allProperties">All properties</Link></li>
     <li><Link to="/dashboard">Dashboard</Link></li>
     <li><Link to="/secret">Secret</Link></li>
-    {/* <li><Link to="/dashboard/cart">
+    <li><Link to="/dashboard/wishList">
         <button className="btn">
-        <FaShoppingCar className="mr-2" />
-            <div className="badge badge-secondary">+{cart.length}</div>
+        <FaShoppingCart className="mr-2" />
+            <div className="badge badge-secondary">+{wishList.length}</div>
         </button>
-        </Link></li> */}
+        </Link></li>
     {
         user ? <>
             {/* <span>{user?.displayName}</span> */}

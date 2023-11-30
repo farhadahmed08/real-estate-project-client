@@ -15,6 +15,7 @@ import Dashboard from "../LayOut/Dashboard";
 import AllUsers from "../Pages/AllUsers/AllUsers";
 import AdminRoute from "./AdminRoute";
 import ManageProperty from "../Pages/Dashboard/ManageProperty";
+import WishList from "../Pages/Dashboard/WishList/WishList";
 
  export const router = createBrowserRouter([
     {
@@ -54,10 +55,10 @@ import ManageProperty from "../Pages/Dashboard/ManageProperty";
       element:<Dashboard/>,
       children:[
         // normal user routes
-        // {
-        //   path:'cart',
-        //   element:<Cart/>
-        // },
+        {
+          path:'wishList',
+          element:<WishList/>
+        },
         // admin only routes
 
         // {

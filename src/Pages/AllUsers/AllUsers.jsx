@@ -32,6 +32,22 @@ const AllUsers = () => {
             }
         })
       }
+      const handleMakeAgent = user =>{
+        axiosSecure.patch(`/users/agent/${user._id}`)
+        .then(res=>{
+            console.log(res.data)
+            if (res.data.modifiedCount > 0) {
+                refetch()
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: `${user.name} is an agent Now!`,
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+            }
+        })
+      }
 
 
 
@@ -110,8 +126,8 @@ const AllUsers = () => {
                 </button>}
                 </td>
                 <td>
-                { user.role ==='admin' ? 'Admin' : <button
-                  onClick={() => handleMakeAdmin(user)}
+                { user.role ==='agent' ? 'Agent' : <button
+                  onClick={() => handleMakeAgent(user)}
                   className="btn bg-orange-500 btn-lg"
                 >
                   <FaUsers className="text-white text-2xl" />

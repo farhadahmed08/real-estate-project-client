@@ -5,13 +5,14 @@ import { CgProfile } from "react-icons/cg";
 import { MdAddHomeWork } from "react-icons/md";
 import { BsChatSquareQuote, BsHouseAddFill } from "react-icons/bs";
 import { PiGitPullRequestBold } from "react-icons/pi";
+import UseAgent from "../Hooks/UseAgent";
 
 
 const Dashboard = () => {
 
 
     const [isAdmin] =UseAdmin();
-    const isAgent = false;
+    const [isAgent] = UseAgent();
 
 
 
