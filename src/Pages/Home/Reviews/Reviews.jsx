@@ -8,7 +8,7 @@ const Reviews = () => {
     const [reviews,setReviews] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5000/reviews')
+        fetch('https://real-estate-platform-server-nu.vercel.app/reviews')
         .then(res=>res.json()
         .then(data =>{
            setReviews(data)
@@ -19,9 +19,10 @@ const Reviews = () => {
     return (
         <section className="m-10">
             
-            <SectionTitle>
+            <SectionTitle
             subHeading={"Reviews"}
             heading={"Watch Review"} 
+            >
             </SectionTitle>
             <div className="grid grid-cols-3 gap-5">
             {

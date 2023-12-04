@@ -38,12 +38,12 @@ import MyAddedProperties from "../Pages/MyAddedProperties/MyAddedProperties";
         {
           path: "/allProperties",
           element: <AllProperties />,
-          loader:()=>fetch('http://localhost:5000/propertyCount')
+          loader:()=>fetch('https://real-estate-platform-server-nu.vercel.app/propertyCount')
         },
         {
           path: "/properties/:id",
           element: <PrivateRoute><SinglePropertie /></PrivateRoute>,
-          loader: ({params})=> fetch(`http://localhost:5000/properties/${params.id}`)
+          loader: ({params})=> fetch(`https://real-estate-platform-server-nu.vercel.app/properties/${params.id}`)
         },
         {
           path: '/login',

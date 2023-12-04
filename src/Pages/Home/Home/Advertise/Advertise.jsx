@@ -8,7 +8,7 @@ const Advertise = () => {
     const [advertise,setAdvertise] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5000/advertise')
+        fetch('https://real-estate-platform-server-nu.vercel.app/advertise')
         .then(res=>res.json()
         .then(data =>{
            setAdvertise(data)
@@ -19,9 +19,10 @@ const Advertise = () => {
 
     return (
        <div>
-        <SectionTitle>
+        <SectionTitle
         subHeading={"From 11.00am to 10.00pm"}
-            heading={"Order Online"} 
+            heading={"Advertise"} 
+        >
         </SectionTitle>
          <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
            {
