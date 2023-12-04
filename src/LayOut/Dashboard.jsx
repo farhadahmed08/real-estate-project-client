@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { FaAd, FaBook, FaCalendar,  FaHome, FaSearch, FaShoppingCart, FaUsers, } from "react-icons/fa";
+import { FaAd, FaBook, FaCalendar,  FaHome, FaUsers, } from "react-icons/fa";
 import UseAdmin from "../Hooks/UseAdmin";
 import { CgProfile } from "react-icons/cg";
 import { MdAddHomeWork } from "react-icons/md";

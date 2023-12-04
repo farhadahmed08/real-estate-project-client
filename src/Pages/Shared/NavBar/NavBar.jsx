@@ -21,7 +21,7 @@ const NavBar = () => {
     <li><Link to="/">Home</Link></li>
     <li><Link to="/allProperties">All properties</Link></li>
     <li><Link to="/dashboard">Dashboard</Link></li>
-    <li><Link to="/secret">Secret</Link></li>
+    
     <li><Link to="/dashboard/wishList">
         <button className="btn">
         <FaShoppingCart className="mr-2" />

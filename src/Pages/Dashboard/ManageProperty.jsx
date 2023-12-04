@@ -4,46 +4,55 @@ import useProperty from "../../Hooks/useProperty";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { useState } from "react";
 
 const ManageProperty = () => {
+  const axiosSecure = useAxiosSecure();
+  const [property, , refetch] = useProperty();
 
-    const axiosSecure = useAxiosSecure();
-    const [property, ,refetch] =useProperty()
-    const handleDeleteItem = (item) => {
-        Swal.fire({
-          title: "Are you sure?",
-          text: "You won't be able to revert this!",
-          icon: "warning",
-          showCancelButton: true,
-          confirmButtonColor: "#3085d6",
-          cancelButtonColor: "#d33",
-          confirmButtonText: "Yes, delete it!",
-        }).then(async (result) => {
-          if (result.isConfirmed) {
-            const res = await axiosSecure.delete(`/menu/${item._id}`);
-            console.log(res.data);
-            if (res.data.deletedCount > 0) {
-              //refetch to update the ui
-              refetch();
-              Swal.fire({
-                position: "top-end",
-                icon: "success",
-                title: `${item.name} has been deleted`,
-                showConfirmButton: false,
-                timer: 1500,
-              });
-            }
-          }
-        });
-      };
+
+  const [buttonText, setButtonText] = useState('Pending');
+
+  const handleClick = () => {
     
+    setButtonText('Accepted');
+  };
 
 
 
-    return (
-        <div>
-            <SectionTitle
+
+
+  const handleDeleteItem = (item) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        const res = await axiosSecure.delete(`/properties/${item._id}`);
+        console.log(res.data);
+        if (res.data.deletedCount > 0) {
+          //refetch to update the ui
+          refetch();
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: `${item.name} has been deleted`,
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+      }
+    });
+  };
+
+  return (
+    <div>
+      <SectionTitle
         heading="Manage Property"
         subHeading="Properties"
       ></SectionTitle>
@@ -58,7 +67,7 @@ const ManageProperty = () => {
                 <th>property title</th>
                 <th>Property location</th>
                 <th>Agent name</th>
-                
+
                 <th>price range</th>
                 <th>verify button</th>
                 <th>reject button</th>
@@ -84,15 +93,10 @@ const ManageProperty = () => {
                   <td>{item.title}</td>
                   <td>{item.location}</td>
                   <td>{item.agentName}</td>
-                  
+
                   <td className="text-right">${item.priceRange}</td>
                   <td>
-                    <Link to={`/dashboard/updateItem/${item._id}`}>
-                      {" "}
-                      <button className="btn btn-ghost bg-orange-500 btn-lg">
-                        <FaEdit className="text-white" />
-                      </button>
-                    </Link>
+                    <button onClick={()=>handleClick(item._id)} className="btn btn-outline">{buttonText}</button>
                   </td>
                   <td>
                     <button
@@ -108,9 +112,8 @@ const ManageProperty = () => {
           </table>
         </div>
       </div>
-            
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ManageProperty;

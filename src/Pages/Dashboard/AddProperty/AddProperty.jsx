@@ -36,7 +36,7 @@ const AddProperty = () => {
             image:res.data.data.display_url
         }
         //
-        const propertyRes = await axiosSecure.post('/properties',propertyItem)
+        const propertyRes = await axiosSecure.post('/myAdded',propertyItem)
         console.log(propertyRes.data) 
         if (propertyRes.data.insertedId) {
             // show success popup

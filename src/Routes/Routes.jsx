@@ -19,6 +19,11 @@ import WishList from "../Pages/Dashboard/WishList/WishList";
 import MyProfile from "../Pages/Dashboard/MyProfile/MyProfile";
 import AddProperty from "../Pages/Dashboard/AddProperty/AddProperty";
 import AgentRoute from "./AgentRoute";
+import AdminProfile from "../Pages/AdminProfile/AdminProfile";
+import AgentProfile from "../Pages/AgentProfile/AgentProfile";
+import ManageReviews from "../Pages/ManageReviews/ManageReviews";
+import MyReviews from "../Pages/MyReviews/MyReviews";
+import MyAddedProperties from "../Pages/MyAddedProperties/MyAddedProperties";
 
  export const router = createBrowserRouter([
     {
@@ -47,10 +52,7 @@ import AgentRoute from "./AgentRoute";
           path: '/signup',
           element: <SignUp></SignUp>
         },
-        {
-          path: '/secret',
-          element: <PrivateRoute><Secret></Secret></PrivateRoute>
-        },
+       
       ],
     },
     {
@@ -63,12 +65,28 @@ import AgentRoute from "./AgentRoute";
           element:<WishList/>
         },
         {
+          path:'propertyBought',
+          element:<WishList/>
+        },
+        {
+          path:'myReviews',
+          element:<MyReviews/>
+        },
+        {
           path:'myProfile',
           element:<MyProfile/>
         },
         // admin only routes
 
         
+        {
+          path:'adminProfile',
+          element:<AdminProfile></AdminProfile>,  
+        },
+        {
+          path:'manageReviews',
+          element:<ManageReviews/>,  
+        },
         {
           path:'manageProperties',
           element:<AdminRoute><ManageProperty/></AdminRoute>,  
@@ -84,6 +102,14 @@ import AgentRoute from "./AgentRoute";
           path:'addProperty',
           element:<AddProperty/>
           
+        },
+        {
+          path:'agentProfile',
+          element:<AgentProfile/>  
+        },
+        {
+          path:'myAddedProperty',
+          element:<MyAddedProperties/> 
         },
 
       ]
