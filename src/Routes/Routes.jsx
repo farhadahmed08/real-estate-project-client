@@ -38,6 +38,7 @@ import MyAddedProperties from "../Pages/MyAddedProperties/MyAddedProperties";
         {
           path: "/allProperties",
           element: <AllProperties />,
+          loader:()=>fetch('http://localhost:5000/propertyCount')
         },
         {
           path: "/properties/:id",

@@ -44,7 +44,7 @@ const AddProperty = () => {
             Swal.fire({
                 position: "top-end",
                 icon: "success",
-                title: `${data.name} is added to the menu`,
+                title: `${data.name} is added to the database`,
                 showConfirmButton: false,
                 timer: 1500
               });
