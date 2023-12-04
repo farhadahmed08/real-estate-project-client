@@ -5,10 +5,11 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import UsePropertyAdmin from "../../Hooks/UsePropertyAdmin";
 
 const ManageProperty = () => {
   const axiosSecure = useAxiosSecure();
-  const [property, , refetch] = useProperty();
+  const [property, , refetch] = UsePropertyAdmin();
 
 
   const [buttonText, setButtonText] = useState('Pending');
